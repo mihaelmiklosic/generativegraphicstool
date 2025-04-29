@@ -7,6 +7,8 @@ env/
 *.log
 __pycache__/
 .DS_Store
+public/js/wild.js
+
 
 # Ignore Python virtual environment
 hrast/new/hrast/handtracking_project/env/
