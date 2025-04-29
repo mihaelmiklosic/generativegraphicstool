@@ -3,7 +3,8 @@
 An interactive generative art tool built by Mihael Miklošić in April 2025.
 
 This tool lets you create animated noise-based grids and cloth-like structures with customizable layout, noise parameters, shapes, and color palettes.  
-You can export your creations as images or videos directly from the browser.
+
+You can export your creations as images or videos directly from the browser in webm and png format.
 
 Built using:
 - HTML + Tailwind CSS
