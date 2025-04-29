@@ -1,0 +1,149 @@
+@import "tailwindcss";
+
+
+input[type="range"] {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 24px;
+    background: #E5E7EB; /* Tailwind gray-200 */
+    border-radius: 4px;
+    outline: none;
+  }
+  input[type="range"]::-webkit-slider-runnable-track {
+    height: 24px;
+    background: #E5E7EB;
+    border-radius: 4px;
+  }
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 24px;
+    height: 24px;
+    background: #000000; /* Tailwind blue-500 */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 0; /* align thumb top with track */
+  }
+  input[type="range"]::-moz-range-track {
+    height: 24px;
+    background: #E5E7EB;
+    border-radius: 4px;
+  }
+  input[type="range"]::-moz-range-thumb {
+    width: 24px;
+    height: 24px;
+    background: #000000;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  input[type="range"]::-ms-track {
+    width: 100%;
+    height: 24px;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+  }
+  input[type="range"]::-ms-fill-lower {
+    background: #E5E7EB;
+    border-radius: 4px;
+  }
+  input[type="range"]::-ms-fill-upper {
+    background: #E5E7EB;
+    border-radius: 4px;
+  }
+  input[type="range"]::-ms-thumb {
+    width: 20px;
+    height: 20px;
+    background: #000000;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-top: 0;
+  }
+
+  input[type="range"]::-webkit-slider-thumb {
+box-shadow: none;
+}
+
+input[type="range"]::-moz-range-thumb {
+box-shadow: none;
+}
+
+input[type="range"]::-ms-thumb {
+box-shadow: none;
+}
+
+/* Optional: remove any focus glow on iOS Safari */
+input[type="range"]:focus {
+outline: none;
+box-shadow: none;
+}
+
+  /* Custom summary marker chevron */
+  details summary {
+    list-style: none;
+    position: relative;
+    padding-right: 1.5em;
+  }
+  details summary::-webkit-details-marker {
+    display: none;
+  }
+  details summary::after {
+    content: "";
+    position: absolute;
+    right: 0em;
+    top: 50%;
+    transform: translateY(-50%) rotate(0deg);
+    width: 1em;
+    height: 1em;
+    background: url('chevron.svg') no-repeat center / contain;
+    transition: transform 0.2s ease;
+  }
+  details[open] summary::after {
+    transform: translateY(-50%) rotate(180deg);
+  }
+
+  
+  
+
+  select {
+appearance: none; /* Remove default arrow */
+-webkit-appearance: none;
+-moz-appearance: none;
+background: url('chevron.svg') no-repeat right 0.75em center / 1em auto;
+padding-right: 2em; /* Prevent text overlap with arrow */
+}
+
+
+@supports (-webkit-touch-callout: none) {
+    #canvasContainer {
+ 
+      height: -webkit-fill-available; 
+      margin: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+    
+
+    #canvasContainer canvas {
+      margin: auto !important;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    #controlsPanel {transform:translateY(60px);}
+  }
+
+  @media (max-width: 640px) {
+  details summary::after {
+    display: none !important;
+    background: none !important;
+    content: none !important;
+  }
+}

@@ -1,0 +1,19 @@
+# Ignore node_modules
+node_modules/
+.env/
+env/
+*.zip
+*.tar.gz
+*.log
+__pycache__/
+.DS_Store
+
+# Ignore Python virtual environment
+hrast/new/hrast/handtracking_project/env/
+
+# Ignore build output
+dist/
+build/
+
+# Ignore Tailwind CLI binary if any
+tailwindcss

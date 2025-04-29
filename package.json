@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "@ffmpeg/ffmpeg": "^0.12.15",
+    "@fontsource/inter": "^5.2.5",
+    "@tailwindcss/cli": "^4.1.4",
+    "tailwindcss": "^4.1.4"
+  }
+}
